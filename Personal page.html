@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... existing head elements ... -->
+    <link rel="stylesheet" href="personal style.css">
+</head>
+<body>
+    <header>
+        <h1>Saisravan Thummanepalli</h1>
+        <p>ServiceNow Developer</p>
+    </header>
+
+<!-- Tab navigation at the top -->
+<div id="tab-navigation">
+    <button class="tab-button active" onclick="openTab(event, 'About')">About Me</button>
+    <button class="tab-button" onclick="openTab(event, 'Notes')">Notes</button>
+</div>
+
+<!-- About Me tab content -->
+<div id="About" class="tab-content active">
+    <section>
+        <h2>About Me</h2>
+        <p>I am a ServiceNow Developer with a BTech from Vardhaman College of Engineering. I specialize in developing and implementing ServiceNow solutions to enhance IT service management.</p>
+    </section>
+    <section>
+        <h2>Education</h2>
+        <p>BTech in Engineering from Vardhaman College of Engineering</p>
+    </section>
+    <section>
+        <h2>Experience</h2>
+        <p>Currently working at EY, contributing to various ServiceNow projects.</p>
+    </section>
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>ServiceNow Certified System Administrator</li>
+            <li>ServiceNow Certified Application Developer</li>
+            <!-- Add more certifications here -->
+        </ul>
+    </section>
+</div>
+
+<!-- Notes tab content -->
+<div id="Notes" class="tab-content">
+    <section>
+        <h2>My Notes</h2>
+        <form id="noteForm">
+            <input type="text" id="noteInput" placeholder="Enter a note" required>
+            <button type="submit">Add Note</button>
+        </form>
+        <ul id="notesList" class="notes-list">
+            <!-- Notes will be added here dynamically -->
+        </ul>
+    </section>
+</div>
+
+<!-- Link to the external JavaScript file -->
+<script src="personal javascript.js"></script>
+</body>
+</html>
